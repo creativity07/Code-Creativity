@@ -71,6 +71,7 @@ textarea {
 button {
   padding: 12px;
   border-radius: 8px;
+  margin-bottom: 6px;
   border: none;
   background: var(--primary);
   color: white;
