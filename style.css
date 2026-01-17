@@ -71,7 +71,7 @@ textarea {
 button {
   padding: 12px;
   border-radius: 8px;
-  margin-bottom: 9px;
+  margin-bottom: 24px;
   border: none;
   background: var(--primary);
   color: white;
@@ -146,4 +146,3 @@ img, video {
     padding: 16px;
   }
 }
-
