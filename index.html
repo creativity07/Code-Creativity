@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Blog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <h1>ProBlog</h1>
+  <div class="top-actions">
+    <button id="themeBtn" onclick="toggleTheme()">Dark Mode</button>
+    <button id="logoutBtn" onclick="logout()">Logout</button>
+  </div>
+</header>
+
+<main class="container">
+
+<section id="auth">
+  <h2>Login / Register</h2>
+  <input id="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="register()">Register</button>
+  <button class="secondary" onclick="login()">Login</button>
+</section>
+
+<section id="app" hidden>
+
+  <div class="new-post">
+    <textarea id="postText" placeholder="What's on your mind?"></textarea>
+    <input type="file" id="media" accept="image/*,video/*">
+    <button onclick="addPost()">Publish</button>
+  </div>
+
+  <div id="posts"></div>
+</section>
+
+<section id="profile" hidden>
+  <button class="secondary" onclick="closeProfile()">Back</button>
+  <h2 id="profileTitle"></h2>
+  <div id="profilePosts"></div>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
